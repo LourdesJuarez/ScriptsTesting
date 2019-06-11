@@ -1,0 +1,95 @@
+{
+  "id": "abf67416-9378-4788-b393-2912c385605d",
+  "version": "2.0",
+  "name": "IMDB-sowtimes-A",
+  "url": "https://www.imdb.com",
+  "tests": [{
+    "id": "05c54960-9687-442b-983c-40e4813e8684",
+    "name": "Cinepolis",
+    "commands": [{
+      "id": "9e1fb144-18b6-4a13-9d8b-045e4af6b68e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6f54a52-e794-42f6-ba03-59c86ea80c13",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6ad8a40-02d6-451f-a043-0dd5e749eba0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Showtimes",
+      "targets": [
+        ["linkText=Showtimes", "linkText"],
+        ["css=#navTitleMenu a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Showtimes')]", "xpath:link"],
+        ["xpath=//li[@id='navTitleMenu']/p/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/showtimes/?ref_=nv_tp_sh_3')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Showtimes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3cd43c2-d62f-4790-89a9-5bc847d1e6ff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cinépolis Paseo Fundadores",
+      "targets": [
+        ["linkText=Cinépolis Paseo Fundadores", "linkText"],
+        ["css=.list_item:nth-child(2) > .fav_box a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Cinépolis Paseo Fundadores')]", "xpath:link"],
+        ["xpath=//div[@id='cinemas-at-list']/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/showtimes/cinema/US/ci58906171?ref_=sh_ov_th')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cinépolis Paseo Fundadores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fadf090-5f12-4207-9465-ab502005bcdd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Aladdin (2019)",
+      "targets": [
+        ["linkText=Aladdin (2019)", "linkText"],
+        ["css=.list_item:nth-child(1) > .info a", "css:finder"],
+        ["xpath=//a[contains(text(),'Aladdin (2019)')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div/div[3]/div/div/div[2]/h3/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/showtimes/title/tt6139732?ref_=shci_tt')]", "xpath:href"],
+        ["xpath=//h3/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Aladdin (2019)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34d0ee3a-f81f-4381-8883-2f6e04c123f1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Watch Trailer",
+      "targets": [
+        ["linkText=Watch Trailer", "linkText"],
+        ["css=.btn2_simple", "css:finder"],
+        ["xpath=//a[contains(text(),'Watch Trailer')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div/div[2]/table/tbody/tr[2]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/video/imdb/vi3875453977?ref_=sh_ov_vi')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Watch Trailer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "46d4cbd4-4e95-4063-978f-b9d869ac7ee1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["05c54960-9687-442b-983c-40e4813e8684"]
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}

@@ -1,0 +1,105 @@
+{
+  "id": "bccfcd62-91f5-487a-ae6b-4e4c6a526191",
+  "version": "2.0",
+  "name": "CasoDePruebaBPM",
+  "url": "http://200.77.226.6/Dashboard/DashBoard.UI/DashBoard.aspx#",
+  "tests": [{
+    "id": "363d59f1-1409-430e-ae64-954670429358",
+    "name": "BPM",
+    "commands": [{
+      "id": "49ee928b-b1d3-4594-b959-3e6d0e454828",
+      "comment": "",
+      "command": "open",
+      "target": "http://200.77.226.6/Dashboard/DashBoard.UI/LogIn.aspx#",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61f5f77c-07a7-49fe-bf38-5f0b012f219d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "697x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09c7c431-c5ad-48f4-88d8-cf60d33a4882",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtUsuario",
+      "targets": [
+        ["id=txtUsuario", "id"],
+        ["name=txtUsuario", "name"],
+        ["css=#txtUsuario", "css:finder"],
+        ["xpath=//input[@id='txtUsuario']", "xpath:attributes"],
+        ["xpath=//form[@id='Form1']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e0d16ad-02a5-4819-9900-1817ab03313c",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtUsuario",
+      "targets": [
+        ["id=txtUsuario", "id"],
+        ["name=txtUsuario", "name"],
+        ["css=#txtUsuario", "css:finder"],
+        ["xpath=//input[@id='txtUsuario']", "xpath:attributes"],
+        ["xpath=//form[@id='Form1']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "WEBTEST"
+    }, {
+      "id": "35ee1c24-006e-49d8-9ae5-81dcdae39804",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtPass",
+      "targets": [
+        ["id=txtPass", "id"],
+        ["name=txtPass", "name"],
+        ["css=#txtPass", "css:finder"],
+        ["xpath=//input[@id='txtPass']", "xpath:attributes"],
+        ["xpath=//form[@id='Form1']/div[3]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b656e4d-0ef4-432d-b176-e4537fe29eb2",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtPass",
+      "targets": [
+        ["id=txtPass", "id"],
+        ["name=txtPass", "name"],
+        ["css=#txtPass", "css:finder"],
+        ["xpath=//input[@id='txtPass']", "xpath:attributes"],
+        ["xpath=//form[@id='Form1']/div[3]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Ab12345678"
+    }, {
+      "id": "3fd396d6-692d-40d3-8c97-524f0b73a2a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnAceptar",
+      "targets": [
+        ["id=btnAceptar", "id"],
+        ["name=btnAceptar", "name"],
+        ["css=#btnAceptar", "css:finder"],
+        ["xpath=//input[@id='btnAceptar']", "xpath:attributes"],
+        ["xpath=//form[@id='Form1']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9edc6d0d-26fe-4fdc-8869-c3955a8428ae",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["363d59f1-1409-430e-ae64-954670429358"]
+  }],
+  "urls": ["http://200.77.226.6/Dashboard/DashBoard.UI/DashBoard.aspx#"],
+  "plugins": []
+}
